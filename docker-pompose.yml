@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  nginx:
+    build:
+        dockerfile: Dockerfile
+        context: .
+    image: nginx
+    container_name: container-lb
+    ports:
+        - 80:80
+    depends_on:
+        - vendas-app
+        - vendas-api
+  vendas-app:
+    image: projeto/vendas-app
+    container_name: container-app1
+    ports:
+      - 3000:3000
+  vendas-api:
+    image: projeto/vendas-api
+    container_name: container-app2
+    depends_on:
+      - vendas-app
+    ports:
+      - 4001:3000
+
+
+
+
+
+ 

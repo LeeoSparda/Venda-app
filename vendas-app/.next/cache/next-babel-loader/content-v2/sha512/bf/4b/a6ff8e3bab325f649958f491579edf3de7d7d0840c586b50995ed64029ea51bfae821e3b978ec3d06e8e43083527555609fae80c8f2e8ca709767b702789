@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { RelatorioVendas } from './vendas';","map":{"version":3,"sources":["C:/Users/FelipePc/Desktop/TDS_projeto/vendas-app/src/components/relatorios/index.ts"],"names":["RelatorioVendas"],"mappings":"AAAA,SAASA,eAAT,QAAgC,UAAhC","sourcesContent":["export { RelatorioVendas } from './vendas'"]},"metadata":{},"sourceType":"module"}
